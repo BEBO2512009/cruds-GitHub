@@ -1,0 +1,343 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: sans-serif;
+    background-color: #ffffff;
+}
+
+.crud{
+    width: 80%;
+    margin: auto;
+}
+
+#head{
+    color: #1282a2 ;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 20px 0;
+}
+
+#head h1{
+    margin: 10px 0;
+}
+
+input{
+    width: 100%;
+    height: 25px;
+    outline: none;
+    border: none;
+    border-radius: 6px;
+    background-color: #e4e4e4;
+    box-shadow:  0 0 3px #dad7cd;
+    color: #000;
+    margin: 3px 0;
+    padding: 5px;
+}
+
+/* input:focus{
+   background-color: #001;
+   transform: scale(1.1);
+} */
+
+.price input{
+   width: 20%;
+}
+
+#total{
+    background-color: #003f88;
+    width: 160px;
+    padding: 5px 3px;
+    border-radius: 5px;
+    margin: 0 10px;
+    transition: 0.6s ease;
+}
+
+#total:hover{
+    scale: 1.1;
+    cursor: pointer;
+}
+
+#total::before{
+    content: 'Totle: ';
+}
+
+button{
+    width: 100%;
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+    background-color: #003f88;
+    margin: 3px 0;
+    font-size: 17px;
+}
+
+#btn{
+    width: 100%;
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+    background-color: #003f88;
+    margin: 3px 0;
+    font-size: 17px;
+    transition: 0.7s ease;
+}
+
+#btn:hover{
+    scale: 1.1;
+    cursor: pointer;
+}
+
+.btnsearch{
+    display: flex;
+    justify-content: space-between;
+}
+
+.btnsearch button{
+    width: 45%;
+    transition: 0.7s ease;
+}
+
+.btnsearch button:hover{
+    scale: 1.1;
+    cursor: pointer;
+}
+
+#searchTitle{
+    text-transform: capitalize;
+}
+
+#searchCategory{
+    text-transform: capitalize;
+}
+
+table{
+    width: 100%;
+    text-align: center;
+    margin: 10px 0;
+}
+
+table th{
+    text-transform: uppercase;
+}
+
+th, td{
+    padding: 5px;
+}
+
+th{
+    color: #669bbc;
+}
+
+#update{
+    transition: 0.7s ease;
+}
+
+#update:hover{
+    scale: 1.1;
+    cursor: pointer;
+}
+
+#delete{
+    transition: 0.7s ease;
+}
+
+#delete:hover{
+    scale: 1.1;
+    cursor: pointer;
+}
+
+#deleteall{
+    text-transform: capitalize;
+    margin: 5px 0;
+    transition: 0.7s ease;
+}
+
+#deleteall:hover{
+    scale: 1.1;
+}
+
+button{
+    color: white;
+}
+
+#tbody{
+    color: #7209b7;
+}
+/* ===================================== */
+
+
+/* للأجهزة الصغيرة جداً (من 250px إلى 575px) */
+@media (min-width: 250px) and (max-width: 575px) {
+    .crud {
+        width: 95%;
+    }
+
+    input {
+        height: 35px;
+        font-size: 14px;
+    }
+
+    button {
+        height: 40px;
+        font-size: 16px;
+    }
+
+    .btnsearch {
+        flex-direction: column;
+    }
+
+    .btnsearch button {
+        width: 100%;
+        margin: 5px 0;
+    }
+
+    .price input {
+        width: 100%;
+    }
+
+    table {
+        font-size: 12px;
+        padding: 5px;
+    }
+
+    th, td {
+        padding: 5px;
+        font-size: 12px;
+    }
+
+    #total {
+        font-size: 14px;
+        padding: 5px;
+    }
+
+    #total::before {
+        font-size: 14px;
+    }
+}
+
+/* للأجهزة المتوسطة (من 576px إلى 1024px) */
+@media (min-width: 576px) and (max-width: 1024px) {
+    .crud {
+        width: 85%;
+    }
+
+    input {
+        height: 30px;
+        font-size: 15px;
+    }
+
+    button {
+        height: 35px;
+        font-size: 17px;
+    }
+
+    .btnsearch button {
+        width: 48%;
+    }
+
+    .price input {
+        width: 45%;
+    }
+
+    table {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    th, td {
+        padding: 8px;
+        font-size: 14px;
+    }
+
+    #total {
+        font-size: 16px;
+        padding: 8px;
+    }
+
+    #total::before {
+        font-size: 16px;
+    }
+}
+
+/* للأجهزة الكبيرة (من 1025px إلى 2500px) */
+@media (min-width: 1025px) and (max-width: 2500px) {
+    .crud {
+        width: 80%;
+    }
+
+    input {
+        height: 30px;
+        font-size: 16px;
+    }
+
+    button {
+        height: 40px;
+        font-size: 18px;
+    }
+
+    .btnsearch button {
+        width: 45%;
+    }
+
+    .price input {
+        width: 20%;
+    }
+
+    table {
+        font-size: 16px;
+        padding: 15px;
+    }
+
+    th, td {
+        padding: 10px;
+        font-size: 16px;
+    }
+
+    #total {
+        font-size: 18px;
+        padding: 10px;
+    }
+
+    #total::before {
+        font-size: 18px;
+    }
+}
+
+/* للأجهزة الكبيرة جداً (أكبر من 2500px) */
+@media (min-width: 2500px) {
+    .crud {
+        width: 75%;
+    }
+
+    input {
+        height: 35px;
+        font-size: 18px;
+    }
+
+    button {
+        height: 45px;
+        font-size: 20px;
+    }
+
+    table {
+        font-size: 18px;
+        padding: 20px;
+    }
+
+    th, td {
+        padding: 15px;
+        font-size: 18px;
+    }
+
+    #total {
+        font-size: 20px;
+        padding: 15px;
+    }
+
+    #total::before {
+        font-size: 20px;
+    }
+}
